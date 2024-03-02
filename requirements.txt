@@ -5,3 +5,9 @@ pandas
 mplfinance
 yfinance
 python-multipart
+sqlalchemy
+psycopg2-binary
+python-jose
+passlib[bcrypt]
+python-dotenv
+
