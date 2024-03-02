@@ -4,7 +4,27 @@
     <title>Finance Viewer</title>
   </head>
   <body>
-    <h1>Welcome to Finance Viewer</h1>
-    <p>This is the homepage of the Finance Viewer application.</p>
+    <h1>ロウソクチャート</h1>
+    <p>企業名と時期を選択してください。</p>
+    <form action="/submit" method="post">
+      <label for="ticker">企業名:</label>
+      <select id="ticker" name="ticker" required>
+        <option value="AAPL">AAPL</option>
+        <option value="GOOGL">GOOGL</option>
+        <option value="MSFT">MSFT</option>
+        <option value="AMZN">AMZN</option>
+        <option value="FB">FB</option>
+        <option value="TSLA">TSLA</option>
+        <option value="NVDA">NVDA</option>
+        <option value="INTC">INTC</option>
+        <option value="CSCO">CSCO</option>
+        <option value="ADBE">ADBE</option></select
+      ><br /><br />
+      <label for="start_date">開始時期:</label>
+      <input type="date" id="start_date" name="start" required /><br /><br />
+      <label for="end_date">終了時期:</label>
+      <input type="date" id="end_date" name="end" required /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>
